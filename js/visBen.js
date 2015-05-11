@@ -310,7 +310,7 @@ var visBen = {
 				addwidth(this.getBBox().width, d.position);
 				return 0;
 			})
-			.on("mouseover", function(d) { d3.select(this).style("fill", "white"); })
+			.on("mouseover", function(d) { d3.select(this).style("fill", "blue"); })
 			.on("mouseout", function(d) { d3.select(this).style("fill", "black"); })
 			.call(drag);
 		
