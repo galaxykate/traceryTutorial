@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Tracery Tutorial and Test</title>
+
+		<link rel="stylesheet" href="css/layout.css">
+
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="js/vendor/tracery.min.js"></script>
+		<script src="js/vendor/vis.js"></script>
+
+		<!--
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+		-->
+		<script src="js/testGrammars.js"></script>
+		<script src="js/io.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="js/testing.js"></script>
+		<script src="js/visBen.js"></script>
+		<script src="js/visKate.js"></script>
+		<script src="js/app.js"></script>
+
+	</head>
+	<body>
+
+		<div id='centerBar'>
+			<div id='leftColumn'>
+				<div id='tutorialBar'>
+					<input type="text" id="username">
+					<div id='errors'></div>
+					<div id='tutorial'>
+						Lesson 1: learning Tracery. Some information here. Etc, some more information, instructions, etc.
+						<p>
+							Click on the text below to edit it.
+					</div>
+				</div>
+				<div id='grammar' class="section">
+					<div spellcheck="false" contenteditable="true" id="grammarText"></div>
+				</div>
+
+			</div>
+			<div id='rightColumn'>
+				<div id='rightWindow' class="section">
+
+				</div>
+
+				<div id='output' class="section">
+					<div spellcheck="false" contenteditable="true"  id='originSymbol' class="section">
+
+					</div>
+					<div id='examples' class="section"></div>
+
+				</div>
+
+				<div id='dev' class="section">
+					<button id="clearStorage">
+						Clear storage
+					</button>
+
+					<button id="toggleVizMode">
+						Toggle Viz mode
+					</button>
+					<div>
+						<div class="data">
+							<span class="title"> Viz Mode: </span>
+							<span id="vizMode" class="value"></span>
+						</div>
+					</div>
+
+					<div>
+						<div class="data">
+							<span class="title"> Database ID: </span>
+							<span id="dbID" class="value"></span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id='bottomBar'></div>
+
+	</body>
+
+</html>

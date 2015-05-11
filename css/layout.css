@@ -1,0 +1,166 @@
+.section {
+	position: relative;
+	margin: 2px;
+	padding: 5px;
+	background-color: rgba(155, 155, 155, .1);
+}
+body, html {
+	overflow: hidden;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100%;
+}
+
+#bottomBar {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 33%;
+	background-color: rgba(155, 200, 155, 1);
+}
+
+#centerBar.minimized {
+	height: 0%;
+}
+
+#centerBar {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 67%;
+	background-color: rgba(155, 155, 155, .1);
+}
+
+#centerBar.maximized {
+	height: 100%;
+}
+
+#leftColumn {
+	position: relative;
+	float: left;
+	width: 60%;
+	height: 100%;
+	background-color: rgba(155, 155, 55, .1);
+}
+
+textarea {
+	border: none;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+#errors {
+	width: 30%;
+	float: right;
+	padding: 5px;
+	max-height: 200px;
+	height: auto;
+	overflow: scroll;
+}
+
+#rightColumn {
+	position: relative;
+	float: right;
+	width: 40%;
+	height: 100%;
+	background-color: rgba(155, 55, 155, .1);
+}
+
+#dev {
+	background-color: rgba(195, 195, 195, .9);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+	padding: 5px;
+	border-radius: 10px;
+	position: absolute;
+	right: 0px;
+	top: -105px;
+	height: 120px;
+	width: 300px;
+	transition: top 200ms ease-in-out;
+}
+#dev:hover {
+	top: -5px;
+}
+
+.data {
+	padding: 2px;
+	margin: 2px;
+	background-color: rgba(255, 255, 255, .9);
+}
+
+.title {
+	font-weight: bold;
+}
+
+.value {
+	color: rgba(55, 55, 15, 1);
+}
+
+#originSymbol {
+	z-index: 30;
+	border-radius: 10px;
+	padding: 3px 10px;
+	position: absolute;
+	left: -9px;
+	top: -5px;
+	background-color: rgba(255, 255, 255, .9);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+}
+
+#examples {
+	height: 100%;
+	z-index: 29;
+	overflow: scroll;
+	float: left;
+	width: 100%;
+}
+
+.example {
+	width: 93%;
+	margin: 2px;
+	padding: 2px;
+	background-color: rgba(255, 255, 255, .9);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+}
+
+#output {
+
+	float: left;
+	width: 100%;
+	height: 60%;
+}
+
+#output.maximized {
+	height: 100%;
+}
+
+#rightWindow {
+	float: left;
+	width: 100%;
+	height: 40%;
+	background-color: rgba(245, 245, 245, .9);
+}
+
+#rightWindow.minimized {
+	height: 0%;
+}
+
+#tutorialBar {
+	z-index: 30;
+	position: absolute;
+	width: 90%;
+	background-color: rgba(245, 245, 245, .9);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+}
+#grammar {
+	z-index: 20;
+	overflow: scroll;
+	height: 95%;
+	bottom: 5px;
+}
+
+#grammarText {
+	z-index: 22;
+	padding: 170px 6px 6px 6px;
+}
