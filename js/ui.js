@@ -32,16 +32,22 @@ var ui = {
         console.log("Refresh");
         var output = $("#examples");
         output.html("");
-
+		
+		var traces = [];
+		
         for (var i = 0; i < 10; i++) {
             if (currentGrammar) {
-                var s = currentGrammar.flatten(ui.originWord);
+                var s = currentGrammar.expand(ui.originWord);
+                traces.push(s);
                 var div = $("<div/>", {
                     class : "example",
-                    html : s
+                    html : s.finalText
                 }).appendTo(output);
             }
         }
+        
+        visBen.onGrammarChange(traces);
+        
     },
 
     updateOrigin : function() {

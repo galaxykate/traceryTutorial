@@ -16,6 +16,7 @@ body, html {
 	float: left;
 	width: 100%;
 	height: 33%;
+	overflow: scroll;
 	background-color: rgba(155, 200, 155, 1);
 }
 

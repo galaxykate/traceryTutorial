@@ -90,8 +90,6 @@ $(document).ready(function() {
         }
 
         visKate.onGrammarChange(currentGrammar, "origin");
-        visBen.onGrammarChange(currentGrammar, "origin");
-
     }
 
 });
